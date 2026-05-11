@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="pt-AO">
+<head>
+    <!-- ============================================= -->
+    <!-- META TAGS - Configurações básicas e SEO       -->
+    <!-- ============================================= -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Viewport: garante que a página se adapte a celulares (responsivo) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO: descrição que aparece no Google e ao partilhar no WhatsApp -->
+    <meta name="description" content="Buquês de flores artesanais em Huambo, Angola. Encomendas e entregas rápidas. Fale connosco pelo WhatsApp.">
+    <meta name="keywords" content="flores, buquês, Huambo, Angola, entrega de flores, floricultura">
+    <meta name="author" content="Floricultura">
+    
+    <!-- Open Graph: como a página aparece quando partilhada no WhatsApp/Facebook -->
+    <meta property="og:title" content="Flores em Huambo">
+    <meta property="og:description" content="Buquês artesanais com entrega em Huambo e arredores.">
+    <meta property="og:type" content="website">
+    
+    <title>Flores Artesanais em Huambo</title>
+    
+
+     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌸</text></svg>">
+    
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Buquês <span>Encantados</span></div>
+            
+            <!-- Menu de navegação (esconde-se em ecrãs pequenos) -->
+            <ul class="nav-links">
+                <li><a href="#produtos">Buquês</a></li>
+                <li><a href="#entrega">Entregas</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ============================================= -->
+    <!-- HERO SECTION - Banner principal               -->
+    <!-- ============================================= -->
+    <section class="hero">
+        <div class="hero-content fade-in">
+            <span class="hero-tag">Floricultura Artesanal</span>
+            <h1>Cada flor conta uma <em>história única</em>.</h1>
+            <p class="hero-description">
+                Buquês personalizados feitos com amor em Huambo. Entregamos a beleza 
+                directamente à sua porta — para si ou para quem ama.
+            </p>
+            <!-- BOTÃO PRINCIPAL: Já vai com mensagem pronta para o WhatsApp -->
+            <!-- IMPORTANTE: Substitua o número 244923000000 pelo número real da consultora -->
+            <a href="https://wa.me/244923000000?text=Ol%C3%A1!%20Gostaria%20de%20falar%20com%20a%20consultora%20sobre%20os%20buqu%C3%AAs." 
+               class="btn btn-primary" 
+               target="_blank" 
+               rel="noopener">
+                Falar com Consultora →
+            </a>
+        </div>
+
+        <!-- IMAGEM PRINCIPAL: Substitua a URL pela foto da loja/dona -->
+        <!-- Usamos parâmetros do Unsplash (?w=600&q=75) para otimizar o tamanho -->
+        <div class="hero-image fade-in">
+            <img src="https://images.unsplash.com/photo-1561181286-d3fee7d55364?w=600&q=75&auto=format&fit=crop" 
+                 alt="Florista a preparar buquê" 
+                 loading="eager"
+                 width="600"
+                 height="750">
+        </div>
+    </section>
+
+    <!-- ============================================= -->
+    <!-- SECÇÃO DE PRODUTOS - Grid com os buquês       -->
+    <!-- ============================================= -->
+    <section class="produtos" id="produtos">
+        <div class="container">
+            <div class="section-title">
+                <span class="tag">Nossa Colecção</span>
+                <h2>Buquês <em>em destaque</em></h2>
+            </div>
+
+            <!-- Grid responsivo (ajusta-se sozinho ao ecrã) -->
+            <div class="produtos-grid">
+
+                <!-- ============================================= -->
+                <!-- CARD 1: Buquê Romance                         -->
+                <!-- Para adicionar mais buquês, copie um card     -->
+                <!-- ============================================= -->
+                <article class="produto-card">
+                    <div class="produto-imagem">
+                        <!-- loading="lazy": só carrega a imagem quando aparece no ecrã (poupa internet) -->
+                        <img src="https://images.unsplash.com/photo-1561181286-d3fee7d55364?w=400&q=70&auto=format&fit=crop" 
+                             alt="Buquê Romance com rosas vermelhas" 
+                             loading="lazy"
+                             width="400"
+                             height="500">
+                    </div>
+                    <div class="produto-info">
+                        <span class="produto-categoria">Clássico</span>
+                        <h3 class="produto-nome">Romance Eterno</h3>
+                        <p class="produto-descricao">
+                            Rosas vermelhas selecionadas com folhagem nobre. O clássico que nunca falha.
+                        </p>
+                        <div class="produto-preco">
+                            25.000<span class="moeda">Kz</span>
+                        </div>
+                        <!-- Mensagem pronta para WhatsApp (já com nome do produto codificado) -->
+                        <a href="https://wa.me/244923000000?text=Ol%C3%A1%2C%20gostaria%20de%20encomendar%20o%20Romance%20Eterno." 
+                           class="btn btn-whatsapp" 
+                           target="_blank" 
+                           rel="noopener">
+                            Encomendar via WhatsApp
+                        </a>
+                    </div>
+                </article>
+
+                <!-- CARD 2: Primavera -->
+                <article class="produto-card">
+                    <div class="produto-imagem">
+                        <img src="https://images.unsplash.com/photo-1487530811176-3780de880c2d?w=400&q=70&auto=format&fit=crop" 
+                             alt="Buquê Primavera com flores coloridas" 
+                             loading="lazy"
+                             width="400"
+                             height="500">
+                    </div>
+                    <div class="produto-info">
+                        <span class="produto-categoria">Colorido</span>
+                        <h3 class="produto-nome">Sopro de Primavera</h3>
+                        <p class="produto-descricao">
+                            Mistura vibrante de flores sazonais. Alegria em forma de buquê.
+                        </p>
+                        <div class="produto-preco">
+                            18.000<span class="moeda">Kz</span>
+                        </div>
+                        <a href="https://wa.me/244930973619?text=Ol%C3%A1%2C%20gostaria%20de%20encomendar%20o%20Sopro%20de%20Primavera." 
+                           class="btn btn-whatsapp" 
+                           target="_blank" 
+                           rel="noopener">
+                            Encomendar via WhatsApp
+                        </a>
+                    </div>
+                </article>
+
+                <!-- CARD 3: Branco Puro -->
+                <article class="produto-card">
+                    <div class="produto-imagem">
+                        <img src="https://images.unsplash.com/photo-1455659817273-f96807779a8a?w=400&q=70&auto=format&fit=crop" 
+                             alt="Buquê de flores brancas" 
+                             loading="lazy"
+                             width="400"
+                             height="500">
+                    </div>
+                    <div class="produto-info">
+                        <span class="produto-categoria">Elegante</span>
+                        <h3 class="produto-nome">Pureza Branca</h3>
+                        <p class="produto-descricao">
+                            Lírios e rosas brancas. Perfeito para casamentos e momentos solenes.
+                        </p>
+                        <div class="produto-preco">
+                            32.000<span class="moeda">Kz</span>
+                        </div>
+                        <a href="https://wa.me/244923000000?text=Ol%C3%A1%2C%20gostaria%20de%20encomendar%20o%20Pureza%20Branca." 
+                           class="btn btn-whatsapp" 
+                           target="_blank" 
+                           rel="noopener">
+                            Encomendar via WhatsApp
+                        </a>
+                    </div>
+                </article>
+
+                <!-- CARD 4: Girassol -->
+                <article class="produto-card">
+                    <div class="produto-imagem">
+                        <img src="https://images.unsplash.com/photo-1597848212624-a19eb35e2651?w=400&q=70&auto=format&fit=crop" 
+                             alt="Buquê de girassóis" 
+                             loading="lazy"
+                             width="400"
+                             height="500">
+                    </div>
+                    <div class="produto-info">
+                        <span class="produto-categoria">Solar</span>
+                        <h3 class="produto-nome">Raio de Sol</h3>
+                        <p class="produto-descricao">
+                            Girassóis radiantes que iluminam qualquer ambiente. Energia pura.
+                        </p>
+                        <div class="produto-preco">
+                            15.000<span class="moeda">Kz</span>
+                        </div>
+                        <a href="https://wa.me/244923000000?text=Ol%C3%A1%2C%20gostaria%20de%20encomendar%20o%20Raio%20de%20Sol." 
+                           class="btn btn-whatsapp" 
+                           target="_blank" 
+                           rel="noopener">
+                            Encomendar via WhatsApp
+                        </a>
+                    </div>
+                </article>
+
+                <!-- CARD 5: Tropical -->
+                <article class="produto-card">
+                    <div class="produto-imagem">
+                        <img src="https://images.unsplash.com/photo-1469259943454-aa100abba749?w=400&q=70&auto=format&fit=crop" 
+                             alt="Buquê tropical exótico" 
+                             loading="lazy"
+                             width="400"
+                             height="500">
+                    </div>
+                    <div class="produto-info">
+                        <span class="produto-categoria">Exótico</span>
+                        <h3 class="produto-nome">Brisa Tropical</h3>
+                        <p class="produto-descricao">
+                            Flores exóticas africanas. Para quem ama o diferente e marcante.
+                        </p>
+                        <div class="produto-preco">
+                            28.000<span class="moeda">Kz</span>
+                        </div>
+                        <a href="https://wa.me/244923000000?text=Ol%C3%A1%2C%20gostaria%20de%20encomendar%20o%20Brisa%20Tropical." 
+                           class="btn btn-whatsapp" 
+                           target="_blank" 
+                           rel="noopener">
+                            Encomendar via WhatsApp
+                        </a>
+                    </div>
+                </article>
+
+                <!-- CARD 6: Suave -->
+                <article class="produto-card">
+                    <div class="produto-imagem">
+                        <img src="https://images.unsplash.com/photo-1518895949257-7621c3c786d7?w=400&q=70&auto=format&fit=crop" 
+                             alt="Buquê delicado em tons pastel" 
+                             loading="lazy"
+                             width="400"
+                             height="500">
+                    </div>
+                    <div class="produto-info">
+                        <span class="produto-categoria">Delicado</span>
+                        <h3 class="produto-nome">Encanto Pastel</h3>
+                        <p class="produto-descricao">
+                            Tons suaves de rosa e pêssego. Romântico e contemporâneo.
+                        </p>
+                        <div class="produto-preco">
+                            22.000<span class="moeda">Kz</span>
+                        </div>
+                        <a href="https://wa.me/244923000000?text=Ol%C3%A1%2C%20gostaria%20de%20encomendar%20o%20Encanto%20Pastel." 
+                           class="btn btn-whatsapp" 
+                           target="_blank" 
+                           rel="noopener">
+                            Encomendar via WhatsApp
+                        </a>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================= -->
+    <!-- SECÇÃO DE ENTREGA - Zonas atendidas           -->
+    <!-- ============================================= -->
+    <section class="entrega" id="entrega">
+        <div class="container">
+            <div class="entrega-grid">
+
+                <div class="entrega-content">
+                    <span class="hero-tag" style="padding-left: 0;">Entregas</span>
+                    <h2>Levamos as flores até <em>si</em></h2>
+                    <p>
+                        Realizamos entregas em toda a área urbana do Huambo e arredores. 
+                        Encomende com antecedência para garantir flores fresquinhas no dia desejado.
+                    </p>
+
+                    <!-- LISTA DE ZONAS: Edite aqui as zonas que a empreendedora cobre -->
+                    <ul class="zonas-lista">
+                        <li>Huambo Centro</li>
+                        <li>São José</li>
+                        <li>Académico</li>
+                        <li>Comercial</li>
+                        <li>Cidade Alta</li>
+                        <li>Arredores*</li>
+                    </ul>
+
+                    <p style="font-size: 0.85rem; font-style: italic;">
+                        * Entregas em arredores podem ter taxa adicional. Consulte-nos.
+                    </p>
+                </div>
+
+                <!-- CAIXA DE INFORMAÇÕES: Horários e contactos -->
+                <div class="info-box">
+                    <h3>Informações</h3>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">🕐</div>
+                        <div class="info-text">
+                            <strong>Horário</strong>
+                            <span>Segunda a Sábado<br>08h00 - 18h00</span>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon">🚚</div>
+                        <div class="info-text">
+                            <strong>Tempo de Entrega</strong>
+                            <span>2 a 4 horas após confirmação</span>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon">💳</div>
+                        <div class="info-text">
+                            <strong>Pagamento</strong>
+                            <span>Multicaixa Express, TPA, Numerário</span>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon">📱</div>
+                        <div class="info-text">
+                            <strong>Contacto Directo</strong>
+                            <!-- IMPORTANTE: Atualize o número do WhatsApp aqui -->
+                            <span>+244 930 973 619</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================= -->
+    <!-- CTA FINAL - Última chamada para acção         -->
+    <!-- ============================================= -->
+    <section class="cta-final" id="contacto">
+        <div class="container">
+            <div class="section-title">
+                <span class="tag">Precisa de um buquê ?</span>
+                <h2>Fazemos buquês <em>personalizados</em></h2>
+            </div>
+            <p>
+                Conte-nos a ocasião, as cores favoritas e o orçamento. 
+                Criamos algo único, especialmente para si.
+            </p>
+            <a href="https://wa.me/2449230973619?text=Ol%C3%A1!%20Gostaria%20de%20encomendar%20um%20buqu%C3%AA%20personalizado." 
+               class="btn btn-primary" 
+               target="_blank" 
+               rel="noopener">
+                Pedir Buquê Personalizado →
+            </a>
+        </div>
+    </section>
+
+    <!-- ============================================= -->
+    <!-- FOOTER - Rodapé com informações               -->
+    <!-- ============================================= -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                
+                <!-- Coluna 1: Marca e descrição -->
+                <div class="footer-brand">
+                    <h3>Buquês Encantados</h3>
+                    <p>
+                        Floricultura artesanal em Huambo. 
+                        Transformamos momentos em memórias através das flores.
+                    </p>
+                </div>
+
+                <!-- Coluna 2: Redes Sociais -->
+                <div class="footer-col">
+                    <h4>Siga-nos</h4>
+                    <ul>
+                        <!-- ATUALIZE: Coloque o @ correto do Instagram -->
+                        <li><a href="https://instagram.com/buquesencantados" target="_blank" rel="noopener">Instagram</a></li>
+                        <li><a href="https://wa.me/244923000000" target="_blank" rel="noopener">WhatsApp</a></li>
+                    </ul>
+                </div>
+
+                <!-- Coluna 3: Navegação -->
+                <div class="footer-col">
+                    <h4>Páginas</h4>
+                    <ul>
+                        <li><a href="#produtos">Buquês</a></li>
+                        <li><a href="#entrega">Entregas</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Direitos autorais -->
+            <div class="footer-bottom">
+                <p>
+                    © 2026 <span>Buquês Encantados</span>. Todos os direitos reservados. 
+                    Feito com 🌸 em Huambo, Angola.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============================================= -->
+    <!-- BOTÃO FLUTUANTE WHATSAPP - Sempre visível    -->
+    <!-- ============================================= -->
+    <a href="https://wa.me/244923000000?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." 
+       class="whatsapp-flutuante" 
+       target="_blank" 
+       rel="noopener"
+       aria-label="Falar pelo WhatsApp">
+        <!-- Ícone do WhatsApp em SVG (mais leve que imagem) -->
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+    </a>
+
+</body>
+</html>
