@@ -2,7 +2,7 @@
         /* VARIÁVEIS DE COR - Mude aqui para alterar TODA a página */
         /* ============================================= */
         :root {
-            --rosa-seco: #c9a0a0;          /* Rosa principal (botões e destaques) */
+            --rosa-seco:  #d4a373;           /* Rosa principal (botões e destaques) */
             --rosa-claro: #f5e6e6;         /* Rosa muito claro (fundos suaves) */
             --rosa-escuro: #a67878;        /* Rosa escuro (hover dos botões) */
             --verde-suave: #a8b89c;        /* Verde sálvia (folhas) */
