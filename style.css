@@ -1,19 +1,19 @@
 /* ============================================= */
         /* VARIÁVEIS DE COR - Mude aqui para alterar TODA a página */
         /* ============================================= */
-        :root {
-            --rosa-seco:  #d4a373;           /* Rosa principal (botões e destaques) */
-            --rosa-claro: #f5e6e6;         /* Rosa muito claro (fundos suaves) */
-            --rosa-escuro: #a67878;        /* Rosa escuro (hover dos botões) */
-            --verde-suave: #a8b89c;        /* Verde sálvia (folhas) */
-            --verde-escuro: #6b7a5e;       /* Verde escuro (acentos) */
-            --branco-sujo: #faf6f3;        /* Branco quente (fundo principal) */
-            --bege: #f0e8e0;               /* Bege suave (cards) */
-            --texto: #3d3633;              /* Cor do texto principal */
-            --texto-suave: #7a6f6a;        /* Texto secundário */
-            --whatsapp: #25d366;           /* Verde oficial do WhatsApp */
-            --whatsapp-escuro: #1da851;    /* WhatsApp hover */
-        }
+:root {
+    --rosa-seco:  #D63384;           /* Magenta vibrante da logo (principal) */
+    --rosa-claro: #FDF2F8;           /* Rosa claríssimo para fundos e contraste */
+    --rosa-escuro: #A62663;          /* Magenta profundo para hover e links */
+    --verde-suave: #6B5A62;          /* Tom neutro/cinza quente para detalhes */
+    --verde-escuro: #D63384;         /* Mantido magenta para manter o brilho da marca */
+    --branco-sujo: #FFFAFC;          /* Branco com um toque mínimo de rosa */
+    --bege: #FFFFFF;                 /* Branco puro para cards */
+    --texto: #2D2327;                /* Texto principal escuro e quente */
+    --texto-suave: #6B5A62;          /* Texto secundário */
+    --whatsapp: #25d366;             /* Verde oficial do WhatsApp */
+    --whatsapp-escuro: #1da851;      /* WhatsApp hover */
+}
 
         * {
             margin: 0;
@@ -46,6 +46,7 @@
         img {
             max-width: 100%;
             display: block;
+            border-radius: 50px;
         }
 
         /* ============================================= */
@@ -209,9 +210,11 @@
         /* Botão WhatsApp (verde) */
         .btn-whatsapp {
             background-color: var(--whatsapp);
-            color: white;
+            color: rgb(0, 0, 0);
             width: 100%;
             justify-content: center;
+            text-align: center;
+            font-style: italic;
         }
 
         .btn-whatsapp:hover {
