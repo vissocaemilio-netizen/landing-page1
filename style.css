@@ -3,17 +3,18 @@
         /* ============================================= */
 :root {
     --rosa-seco:  #D63384;           /* Magenta vibrante da logo (principal) */
-    --rosa-claro: #FDF2F8;           /* Rosa claríssimo para fundos e contraste */
+    --branco: #FDF2F8;           /* Rosa claríssimo para fundos e contraste */
     --rosa-escuro: #A62663;          /* Magenta profundo para hover e links */
-    --verde-suave: #6B5A62;          /* Tom neutro/cinza quente para detalhes */
-    --verde-escuro: #D63384;         /* Mantido magenta para manter o brilho da marca */
-    --branco-sujo: #FFFAFC;          /* Branco com um toque mínimo de rosa */
+    --cinza-leve: #6B5A62;          /* Tom neutro/cinza quente para detalhes */
+    --rosa-brilhante: #D63384;         /* Mantido magenta para manter o brilho da marca */
+    --branco-sujo: #e2dadd;          /* Branco com um toque mínimo de rosa */
     --bege: #FFFFFF;                 /* Branco puro para cards */
     --texto: #2D2327;                /* Texto principal escuro e quente */
     --texto-suave: #6B5A62;          /* Texto secundário */
     --whatsapp: #25d366;             /* Verde oficial do WhatsApp */
     --whatsapp-escuro: #1da851;      /* WhatsApp hover */
-}
+    --barra: #9c7e8d11;
+}   
 
         * {
             margin: 0;
@@ -24,8 +25,21 @@
         /* Rolagem suave ao clicar nos links do menu */
         html {
             scroll-behavior: smooth;
+            
+        }
+        /* Esconder a barra de rolagem em todos os navegadores */
+        html {
+            /* Para Firefox */
+            scrollbar-width: none;
+            
+            /* Para Internet Explorer e Edge antigo */
+            -ms-overflow-style: none;
         }
 
+        /* Para Chrome, Safari e novas versões do Edge */
+        html::-webkit-scrollbar {
+            display: none;
+}
        
         body {
             font-family: 'Jost', sans-serif;
@@ -34,6 +48,7 @@
             background-color: var(--branco-sujo);
             line-height: 1.6;
             overflow-x: hidden; /* Evita scroll horizontal indesejado */
+            
         }
 
         /* Títulos usam a fonte serifada elegante */
@@ -64,7 +79,7 @@
         .navbar {
             position: sticky;
             top: 0;
-            background-color: rgba(250, 246, 243, 0.95);
+            background-color: var(--barra);
             backdrop-filter: blur(10px);
             -webkit-backdrop-filter: blur(10px); /* Safari */
             z-index: 100;
@@ -90,7 +105,7 @@
         }
 
         .logo span {
-            color: var(--verde-escuro);
+            color: var(--rosa-brilhante);
             font-style: italic;
         }
 
@@ -138,7 +153,7 @@
             font-size: 0.85rem;
             letter-spacing: 0.3em;
             text-transform: uppercase;
-            color: var(--verde-escuro);
+            color: var(--rosa-brilhante);
             margin-bottom: 1.5rem;
             padding-left: 3rem;
             position: relative;
@@ -152,7 +167,7 @@
             top: 50%;
             width: 2rem;
             height: 1px;
-            background-color: var(--verde-escuro);
+            background-color: var(--rosa-brilhante);
         }
 
         .hero h1 {
@@ -246,7 +261,7 @@
             left: 1.5rem;
             right: -1.5rem;
             bottom: -1.5rem;
-            border: 1px solid var(--verde-suave);
+            border: 1px solid var(--cinza-leve);
             z-index: -1;
         }
 
@@ -262,7 +277,7 @@
             font-size: 0.85rem;
             letter-spacing: 0.3em;
             text-transform: uppercase;
-            color: var(--verde-escuro);
+            color: var(--rosa-brilhante);
             display: block;
             margin-bottom: 1rem;
         }
@@ -344,7 +359,7 @@
             font-size: 0.75rem;
             letter-spacing: 0.2em;
             text-transform: uppercase;
-            color: var(--verde-escuro);
+            color: var(--rosa-brilhante);
             margin-bottom: 0.5rem;
         }
 
@@ -383,7 +398,7 @@
         /* ============================================= */
         .entrega {
             padding: 6rem 0;
-            background-color: var(--rosa-claro);
+            background-color: var(--branco);
             position: relative;
             overflow: hidden;
         }
@@ -433,7 +448,7 @@
         .zonas-lista li {
             padding: 1rem 1.2rem;
             background-color: white;
-            border-left: 3px solid var(--verde-suave);
+            border-left: 3px solid var(--cinza-leve);
             font-size: 0.95rem;
             display: flex;
             align-items: center;
@@ -450,12 +465,13 @@
             padding: 2rem;
             border-radius: 4px;
             border: 1px solid rgba(201, 160, 160, 0.2);
-        }
+            }
 
         .info-box h3 {
             font-size: 1.5rem;
             margin-bottom: 1.5rem;
-            color: var(--rosa-escuro);
+            color: var(--rosa-escuro)
+        
         }
 
         .info-item {
@@ -463,7 +479,8 @@
             gap: 1rem;
             margin-bottom: 1.2rem;
             padding-bottom: 1.2rem;
-            border-bottom: 1px solid var(--rosa-claro);
+            border-bottom: 1px solid var(--branco);
+            
         }
 
         .info-item:last-child {
@@ -534,7 +551,7 @@
 
         .footer-brand h3 {
             font-size: 1.8rem;
-            color: var(--rosa-claro);
+            color: var(--rosa-escuro);
             margin-bottom: 1rem;
         }
 
@@ -570,7 +587,7 @@
         }
 
         .footer-col a:hover {
-            color: var(--rosa-claro);
+            color: var(--branco);
         }
 
         .footer-bottom {
